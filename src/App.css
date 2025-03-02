@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #003087; /* A shade of blue often used in government branding */
+    color: white;
+    padding: 20px;
+  }
+  
+  .logo {
+    text-align: center; /* Center align content */
+    font-size: 19px; /* Default text size */
+    font-style: normal;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Font shadow effect */
+    color: white; /* Text color */
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 15px; /* Smaller text size for mobile */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Smaller shadow for small screens */
+    }
+  }
+  
+  .emblem {
+    width: 50px; /* Default size */
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .emblem {
+      width: 50px; /* Tablet size */
+      margin-right: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .emblem {
+      width: 40px; /* Mobile size */
+      margin-right: 5px;
+    }
+  }
+  
+  /* Certificate Section Styles */
+  .certificate {
+    width: 80%;
+    margin-left: 10%;
+    padding: 40px 20px;
+    background-color:rgb(204,220,255); /* Light blue background as per the image */
+    flex-grow: 1;
+    border-left: 5px solid #4A90E2; /* Left border */
+    border-right: 5px solid #4A90E2; /* Right border */
+    color: #000000; /* Black font color for all text */
+  }
+  
+  .certificate h1 {
+    font-size: 36px;
+    color: #fffbfb; /* Black font color */
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Add a downward triangle below the title */
+  .certificate h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #4A90E2; /* Blue triangle */
+  }
+  
+  .certificate-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .certificate-details p {
+    margin: 10px 0;
+    color: #000000; /* Black font color */
+  }
+  
+  .certificate-details strong {
+    display: inline-block;
+    width: 180px; /* Adjusted for better spacing */
+    color: #000000; /* Black font color */
+  }
+  
+  .official-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #555; /* Slightly lighter for the note */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #003087;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .buttomFont {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  h1{
+    color: white;
+  }
